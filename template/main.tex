@@ -1,0 +1,236 @@
+\documentclass[10pt,a4paper,twoside]{article}
+\input{./preamble.tex}
+
+\begin{document}
+
+\begin{multicols}{2}
+
+\section*{Trigonométrie}
+$\sin (\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta$, $\sin (2\alpha) = 2 \sin \alpha \cos \alpha$
+
+$\cos (\alpha+\beta) = \cos \alpha \cos \beta - \sin \alpha \sin \beta$,  $\cos (2\alpha) = \cos ^2\alpha - \sin ^2\alpha$
+
+$\sin(\arccos x) = \sqrt{1 - x^2}$, $\sin(\arctan x) = x / \sqrt{1 + x^2}$
+
+
+$\cos(\arcsin x) = \sqrt{1 - x^2}$, 
+$\cos(\arctan x) = 1 / \sqrt{1 + x^2}$
+
+
+$\tan(\arcsin x) = x / \sqrt{1 - x^2}$,$\tan(\arccos x) = \sqrt{1 - x^2} / x$
+
+\section*{Produit vectoriel}
+
+$\bf{a} \times (\bf{b} \times  \bf{c}) = (\bf{a} \cdot  \bf{c}) \bf{b} - (\bf{a} \cdot \bf{b})\bf{c}$
+
+\section*{Cinématique}
+Abscisse curviligne : $v = \frac{\d s}{\d t} $
+
+Accélération générale : $\bf{a} = \frac{\d v}{\d t} \bf{u}_{T} + \frac{v^2}{\rho} \bf{u}_{N}$
+
+\textbf{Cylindrique}
+\[
+\left\{
+    \begin{array}{ll}
+		v_{\rho} =& \dot{\rho} \\
+		v_{\phi} =&  \rho\dot{\phi}\\
+		v_{z} =& \dot{z}
+    \end{array}
+\right.
+ \quad 
+\left\{
+    \begin{array}{ll}
+		a_{\rho} =& \ddot{\rho} - \rho \dot{\phi}^2 \\
+		a_{\phi} =& 2 \dot{\rho}\dot{\phi} + \rho \ddot{\phi} \\
+		a_{z} =& \ddot{z}
+    \end{array}
+\right.
+\]
+\textbf{Sphérique}
+\[
+\left\{ 
+    \begin{array}{ll}
+		v_{r} =& \dot{r}\\
+		v_{\theta} =& r \dot{\theta} \\
+		v_{\phi} =& r \dot{\phi} \sin \theta
+    \end{array}
+\right.
+\left\{ 
+    \begin{array}{ll}
+		a_{r} =& \ddot{r} - r \dot{\theta}^2 - r \dot{\phi}^2 \sin ^2\theta\\
+		a_{\theta} =& r \ddot{\theta} + 2 \dot{r}\dot{\theta} - r \dot{\phi}^2 \cos \theta \sin \theta\\
+		a_{\phi} =& r \ddot{\phi} \sin  \theta + 2 r \dot{\phi} \dot{\theta} \cos \theta + 2 \dot{r}\dot{\phi} \sin \theta
+    \end{array}
+\right.
+\] 
+
+\section*{Dynamique}
+
+sdf
+
+Ressort : $\bf{R} = -k (\|\bf{OP}\| - l_0) \frac{\bf{OP}}{\|\bf{OP}\|}$
+
+Gravitation : $\bf{F}^{2 \to 1} = - G \frac{m_1m_2}{r^2}\bf{u}^{2\to 1}$
+
+Coulomb :  $\bf{F}^{2 \to 1} = \frac{1}{4\pi \epsilon_0} \frac{q_1q_2}{r^2}\bf{u}^{2\to 1}$
+
+Lorenz : $\bf{F} = q\bf{v}\times \bf{B}$
+
+Frottement sec statique/dynamique:
+\[
+\|\bf{F}\| \leq  \mu_{s} \|\bf{N}\|  \quad  \quad 
+\bf{F} = - \mu_{c} \|\bf{N}\| \frac{\bf{v}}{\|\bf{v}\|}
+\]
+\hr 
+Quantité de mouvement : $\bf{p} = m \bf{v}$, $\bf{F} = \frac{\d \bf{p}}{\d t} $
+
+Thmr de l'impulsion : $\Delta \bf{p} = \int_{t_{i}}^{t_{f}} \bf{F} \d t = \bf{J}$
+
+Thmr var e-cin : $W^{t_{i} \to t_{f}} = \int_{t_{i}}^{t_{f}} \bf{F} \cdot \bf{v} \d t = \Delta K$
+
+\textbf{Froces concervatives}
+
+Définition : $W = U(\bf{r}_{A}) - U(\bf{r}_{B})$
+
+Dérivation d'un potientiel (coord. cart/cyl/sphé)
+
+
+$\bf{F} = -\nabla U = - \frac{  \d  U_{x}}{  \d  x}\bf{u_{x}} - \frac{  \d  U_{y}}{  \d  y}\bf{u_{y}}  - \frac{\d  U_{z}}{\d  z}\bf{u_{z}}$ 
+
+
+$
+\bf{F} = -\nabla  U = - \frac{\d U_{\rho}}{\d \rho} \bf{u_{\rho}} - \frac{1}{r} \frac{\d U_{\theta}}{\d \theta} \bf{u_{\theta}} - \frac{\d U_{z}}{\d z} \bf{u_{z}}
+$
+
+
+$
+\bf{F} = -\nabla U = - \frac{\d U_{r}}{\d r} \bf{u_{r}} - \frac{1}{r} \frac{\d U_{\phi}}{\d \phi} \bf{u_{\phi}}-\frac{1}{r \sin \theta} \frac{\d U_{\theta}}{\d \theta} \bf{u_{\theta}}
+$
+
+\textbf{Force centrale} 
+
+$\bf{L}_{0} = \const $, $\frac{\d A}{\d t} = \const $, $U = U(r)$. 
+
+\textbf{Énergie} 
+
+Conservation : $E = K + U = \const $
+
+Non-conservation : $K_{B} + \sum U_{B} = K_{A} + \sum U_{A} + \int_{A, \Gamma} ^{B} \bf{F}^{\text{NC}}\cdot \d \bf{r}$
+
+\textbf{Moments} 
+
+Cinétique : $\bf{L}_{0} = \bf{OP} \times  m \bf{v}$
+
+De force : $\bf{M}_{0} = \bf{OP} \times  \bf{F}$
+
+\section*{Ocsillations}
+Harmonique : $\frac{\d^{2} x}{\d t^{2}} = -\omega_0^2 x$
+
+
+$\implies x = A \sin (\omega_0 t) + B \cos (\omega_0 t) $ ou $ x = C \cos (\omega_0 t + \phi)
+$
+
+
+Amortis : $\frac{\d^{2} x}{\d t^{2}} + 2\gamma \frac{\d x}{\d t}  + \omega_0^2 x = 0$
+
+$\underline{\gamma^2 < \omega_0^2} \implies x = C e^{-\gamma t} \cos (\omega t + \phi),\quad  \omega^2 = |\gamma^2 - \omega_0^2|$
+
+$\underline{\gamma^2 > \omega_0 ^2} \implies x = e^{-\gamma t}\l( A e^{\omega t} + B e^{- \omega t} \r) ,\quad  \omega^2 = |\gamma^2 - \omega_0^2|$
+
+$\underline{\gamma^2 = \omega_0^2} \implies x = e ^{-\gamma t} (A + B t)$
+
+Résonance : $\frac{\d^{2} x}{\d t^{2}} + 2\gamma \frac{\d x}{\d t}  + \omega_0^2 x = f \cos (\Omega t)$
+
+
+$\underline{t \gg 1 / \gamma} \implies x_{p} \cong A(\Omega) \cos \left[ \Omega t + \phi(\Omega) \right] $
+
+$A(\Omega) = \frac{f}{\sqrt{(\omega_0^2 - \Omega^2)^2 + (2\gamma\Omega)^2} },\quad  \Omega_{\text{MAX}} = \sqrt{\omega_0^2 - 2 \gamma^2} 
+$
+
+$\phi(\Omega) = \arctan \frac{2\gamma\Omega}{\Omega^2 - \omega_0^2}$
+
+\section*{Référentiels accèlérée}
+
+Vitesse : 
+\[
+\bf{v}_{p} = \bf{v}'_{p} + \bf{V}_{O'} + \bf{\omega} \times  \bf{O'P}
+\] 
+
+Accèlération : 
+\[
+\bf{a}_{p} = \bf{a}'_{p} + 2 \bf{\omega}  \times \bf{v}'_{p} + \bf{A}_{O'} + \bf{\omega}\times (\bf{\omega} \times  \bf{O'P}) + \dot{\bf{\omega}} \times  \bf{O'P}
+\] 
+Force :
+\[
+m \bf{a}'_{p} = \sum\bf{F} -  2m \bf{\omega}  \times \bf{v}'_{p} - m\bf{A}_{O'} - m\bf{\omega}\times (\bf{\omega} \times  \bf{O'P}) - m\dot{\bf{\omega}} \times  \bf{O'P}
+\] 
+\section*{Système de particules}
+Moment cinétique total : $\bf{L}_{G} = \sum \bf{GP_{i}} \times  m_{i} (\bf{\omega} \times \bf{GP_{i}})$
+
+Moment de force : 
+\[
+\frac{\d \bf{L}_{0}}{\d t} = \bf{M}_{0}^{\text{ext}},  \quad \frac{\d \bf{L}_{G}}{\d t} = \bf{M}_{G}^{\text{ext}}
+\] 
+
+Variation d'énergie cinétique : $\Delta K = W^{\text{ext}} + W^{\text{int}}$
+
+Thmr du centre de masse : 
+$
+M \frac{\d \bf{V}_{G}}{\d t} = \sum \bf{F}^{\text{ext}}
+$
+
+\textbf{Chocs} 
+\[
+\Delta \bf{P} \underbrace{\cong}_{\substack{\text{à voir}}} 0  \quad \Delta \bf{L}_{0} \underbrace{\cong}_{\substack{\text{à voir}}} 0
+ \quad \Delta K\left\{ 
+    \begin{array}{lcl}
+		= 0& \text{ élastique}\\
+		\neq  0& \text{ inélastique}\\
+    \end{array}
+\right.
+\] 
+\textbf{Système ouvert} 
+
+2ème loi adaptée : $M(t) \frac{\d \bf{v}}{\d t}  = \bf{F}^{\text{ext}} + \bf{v}_{\text{rel}} \frac{\d M}{\d t} $
+
+\section*{Solide}
+
+\textbf{Cinématique} 
+
+Vitesse : $\bf{v}_{p} = \bf{V}_{A} + \bf{\omega} \times  \bf{AP}$, utile quand $A$ est sur $\Delta$.
+
+Accélération : $\bf{a}_{p} = \bf{A}_{A} + \dot{\bf{\omega}}\times \bf{AP} + \bf{\omega}\times (\bf{\omega}\times \bf{AP}),\quad  A \text{ sur } \Delta.$
+
+\textbf{Dynamique} 
+
+Thmr du moment cinétique : $\frac{\d \bf{L}_{0}}{\d t} = \bf{M}_{0}^{\text{ext}},  \quad \frac{\d \bf{L}_{G}}{\d t} = \bf{M}_{G}^{\text{ext}}$
+
+Thmr du transfert : $\bf{L}_{A} = \bf{AO} \times  M \bf{V}_{G} + \bf{L}_{O}$
+
+Variation d'énergie cinétique : $\Delta K = W^{\text{ext}}$ 
+
+\textbf{Rotation autour d'un axe de symétrie} 
+
+Moment d'inertie : $I_{\Delta G} = \sum m_{i} \|\bf{GP_{i}_{\perp}}\|^2 = \int_{M} \d m R^2$
+
+Thmr Steiner : $I_{\Delta A} = M d_{G}^2 + I_{\Delta G}$
+
+Moment cinétique : $\bf{L}_{G} = I_{\Delta G} \bf{\omega}$
+
+Énergie cinétique : $K = \frac{1}{2} M V_{G}^2 +\frac{1}{2} I_{\Delta G} \omega^2$
+
+
+\textbf{Rotation, cas général} 
+
+Tenseur d'inertie : $\tilde{I}_{G}_{\alpha\beta} = \sum_{i} m_{i} \left[ \|\bf{GP}_{i}\|^2 \delta_{\alpha \beta} - GP_{i, \alpha} GP_{i, \beta}\right]$
+
+Énergie cinétique : $K = \frac{1}{2} M V_{G}^2 +\frac{1}{2} \bf{\omega}^{T} \tilde{I}_{G}\bf{\omega}$
+
+Pt fixe : $ \tilde{I}_{O}_{\alpha \beta} = M \left[ \|\bf{OG}\|^2 \delta_{\alpha \beta} - OG_{\alpha} OG_{\beta}\right] +\tilde{I}_{G}_{\alpha\beta}$
+
+Énergie cinétique : $K = \frac{1}{2} \bf{\omega}^{T} \tilde{I}_{O}\bf{\omega}$
+
+
+\end{multicols}
+
+\end{document}

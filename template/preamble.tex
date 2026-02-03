@@ -1,0 +1,159 @@
+% Encodage et langue
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% Marges très fines
+\usepackage[
+  top=1cm,
+  bottom=1cm,
+  left=1cm,
+  right=1cm
+]{geometry}
+
+% Police compacte et lisible
+\usepackage{lmodern}      % meilleure lisibilité
+\usepackage{microtype}    % optimise l'espacement
+
+% Deux colonnes
+\usepackage{multicol}
+\setlength{\columnsep}{0.5cm} % espace entre colonnes
+% Ligne de séparation entre colonnes
+\setlength{\columnseprule}{0.2pt} % épaisseur de la barre
+\def\columnseprulecolor{\color{black}}
+\usepackage{color}
+
+
+% Réduction des espacements
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.95}
+
+% Maths
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+
+% Fancy script capitals
+\usepackage{mathrsfs}
+\usepackage{cancel}
+% Bold math
+\usepackage{bm}
+% Some shortcuts
+\newcommand\A{\ensuremath{\mathbb{A}}}
+\newcommand\B{\ensuremath{\mathbb{B}}}
+\newcommand\C{\ensuremath{\mathbb{C}}}
+\newcommand\D{\ensuremath{\mathbb{D}}}
+\newcommand\E{\ensuremath{\mathbb{E}}}
+\newcommand\F{\ensuremath{\mathbb{F}}}
+\newcommand\G{\ensuremath{\mathbb{G}}}
+\newcommand\H{\ensuremath{\mathbb{H}}}
+\newcommand\I{\ensuremath{\mathbb{I}}}
+\newcommand\J{\ensuremath{\mathbb{J}}}
+\newcommand\K{\ensuremath{\mathbb{K}}}
+\newcommand\L{\ensuremath{\mathbb{L}}}
+\newcommand\M{\ensuremath{\mathbb{M}}}
+\newcommand\N{\ensuremath{\mathbb{N}}}
+\newcommand\O{\ensuremath{\mathbb{O}}}
+\newcommand\P{\ensuremath{\mathbb{P}}}
+\newcommand\Q{\ensuremath{\mathbb{Q}}}
+\newcommand\R{\ensuremath{\mathbb{R}}}
+\newcommand\S{\ensuremath{\mathbb{S}}}
+\newcommand\T{\ensuremath{\mathbb{T}}}
+\newcommand\U{\ensuremath{\mathbb{U}}}
+\newcommand\V{\ensuremath{\mathbb{V}}}
+\newcommand\W{\ensuremath{\mathbb{W}}}
+\newcommand\X{\ensuremath{\mathbb{X}}}
+\newcommand\Y{\ensuremath{\mathbb{Y}}}
+\newcommand\Z{\ensuremath{\mathbb{Z}}}
+
+\newcommand\aA{\ensuremath{\mathcal{A}}}
+\newcommand\bB{\ensuremath{\mathcal{B}}}
+\newcommand\cC{\ensuremath{\mathcal{C}}}
+\newcommand\dD{\ensuremath{\mathcal{D}}}
+\newcommand\eE{\ensuremath{\mathcal{E}}}
+\newcommand\fF{\ensuremath{\mathcal{F}}}
+\newcommand\gG{\ensuremath{\mathcal{G}}}
+\newcommand\hH{\ensuremath{\mathcal{H}}}
+\newcommand\iI{\ensuremath{\mathcal{I}}}
+\newcommand\jJ{\ensuremath{\mathcal{J}}}
+\newcommand\kK{\ensuremath{\mathcal{K}}}
+\newcommand\lL{\ensuremath{\mathcal{L}}}
+\newcommand\mM{\ensuremath{\mathcal{M}}}
+\newcommand\nN{\ensuremath{\mathcal{N}}}
+\newcommand\oO{\ensuremath{\mathcal{O}}}
+\newcommand\pP{\ensuremath{\mathcal{P}}}
+\newcommand\qQ{\ensuremath{\mathcal{Q}}}
+\newcommand\rR{\ensuremath{\mathcal{R}}}
+\newcommand\sS{\ensuremath{\mathcal{S}}}
+\newcommand\tT{\ensuremath{\mathcal{T}}}
+\newcommand\uU{\ensuremath{\mathcal{U}}}
+\newcommand\vV{\ensuremath{\mathcal{V}}}
+\newcommand\wW{\ensuremath{\mathcal{W}}}
+\newcommand\xX{\ensuremath{\mathcal{X}}}
+\newcommand\yY{\ensuremath{\mathcal{Y}}}
+\newcommand\zZ{\ensuremath{\mathcal{Z}}}
+
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rang}{\operatorname{rang}}
+\newcommand{\End}{\operatorname{End}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\Bij}{\operatorname{Bij}}
+\newcommand{\DET}{\operatorname{det}}
+\newcommand{\min}{\operatorname{min}}
+\newcommand{\max}{\operatorname{max}}
+\newcommand{\sup}{\operatorname{sup}}
+\newcommand{\TR}{\operatorname{Tr}}
+\newcommand{\inf}{\operatorname{inf}}
+\renewcommand{\span}{\operatorname{Vect}}
+\newcommand{\const}{\textsc{const}}
+
+\renewcommand{\d}{\text{d}}
+\let\p\partial
+
+
+% Easily typeset systems of equations (French package)
+\usepackage{systeme}
+
+% Put x \to \infty below \lim
+\let\svlim\lim\def\lim{\svlim\limits}
+% Idem for the sum
+\let\svsum\sum\def\sum{\svsum\limits}
+% And the integral
+\let\svint\int\def\int{\svint\limits}
+% And the fractions
+\let\svfrac\frac\def\frac#1#2{{\displaystyle\svfrac{#1}{#2}}}
+
+
+%Make implies and impliedby shorter
+\let\implies\Longrightarrow
+\let\impliedby\Longleftarrow
+\let\iff\Longleftrightarrow
+\let\bf\boldsymbol
+\let\l\left
+\let\r\right
+
+% Add \contra symbol to denote contradiction
+\usepackage{stmaryrd} % for \lightning
+\newcommand\contra{\scalebox{1.5}{$\lightning$}}
+
+\let\phi\varphi
+\let\epsilon\varepsilon
+
+% Command for short corrections
+% Usage: 1+1=\correct{3}{2}
+
+\definecolor{correct}{HTML}{009900}
+\newcommand\correct[2]{\ensuremath{\:}{\color{red}{#1}}\ensuremath{\to }{\color{correct}{#2}}\ensuremath{\:}}
+\newcommand\green[1]{{\color{correct}{#1}}}
+
+% horizontal rule
+\newcommand\hr{
+    \noindent\rule[0.5ex]{\linewidth}{0.5pt}
+}
+% Titres compacts
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.5ex}{0.3ex}
+\titlespacing*{\subsection}{0pt}{0.3ex}{0.2ex}
+
+% Pas de numéros de page
+\pagestyle{empty}
