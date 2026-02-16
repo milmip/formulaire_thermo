@@ -8,8 +8,8 @@ Praticipating :
 
 ## Build
 
-For compiling, just run the `build.sh` script. It will creat `bin/` & `obj/`, which are ignored for the repo.
+For compiling, just run the `build.sh` script. It will create `bin/` & `obj/`, which are ignored for the repo.
 
-The 4th opotion, *debug*, runs `gdb`; so make sure you have it installed :wink:.
+The 4th opotion called *debug*, runs `gdb`; so make sure you have it installed :wink:.
 
 
