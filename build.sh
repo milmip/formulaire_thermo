@@ -31,11 +31,11 @@ else
     echo "Abort..."
 fi
 
-read -p "Run it? (y(or nothing)/n) " -n 1 -r run_choice
+read -p "Run it? [Y/n] " -n 1 -r run_choice
 clear
 
-if [ "$run_choice" == "y" ] || [ "$run_choice" == "" ]; then
+if [ "$run_choice" == "y" ] || [ "$run_choice" == "y" ] || [ "$run_choice" == "" ]; then
 	$TARGET
     exit $?
 fi
-exit 
+exit
