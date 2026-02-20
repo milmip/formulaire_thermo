@@ -27,8 +27,9 @@ Format : [fait/à faire] TACHE	DURÉE (en minutes)
 ---
 # A FAIRE (PROCHAINE ETAPE)
 
-Emilien: 
-Thomas: 
+Emilien: semaine 2 du mooc, et commencer à étuidier le tuto de J-C Chapelier sur [raylib](https://github.com/cqa14/TutoRaylib/)
+
+Thomas: semaine 2 du mooc, et commencer à étuidier le tuto de J-C Chapelier sur [raylib](https://github.com/cqa14/TutoRaylib/)
 
 ---
 # SUIVI
@@ -37,7 +38,7 @@ Thomas:
 
 * E+T : Lecture de la présentation du projet. 15min
 * E+T : Création d'un projet vide. 30min
-* E+T : Discution du workflow: nous avons choisi de travailler sur notre environement personnel. Pour la gestion des version, nous utiliserons `git`, avec `GitHub` comme repo d'autorité. 30min
+* E+T : Discution du workflow: nous avons choisi de travailler sur notre environement personnel. Pour la gestion des version, nous utiliserons `git`, avec `GitHub` comme repo d'autorité. Comme nous sommes novices avec cet outil, nous adopterons un mode de fonctionnement simple: une nouvelle fonctionnalité / une correction de bug / une amélioration = nouvelle branche dédidée. Ensuite, *pull request* sur `main` (toujours avec le collègue en *reviewer*), adaptations éventuelles, puis *merge*. Enfin, pour les grosses fonctionnalités, création d'une branche test dédiée qu'on laissera libre. 30min
 * E+T : Test du workflow avec chacun une *pull request* avec *review*. 45min
 
 Temps passé : 2h
