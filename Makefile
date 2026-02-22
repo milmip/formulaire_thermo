@@ -8,7 +8,7 @@ RAYLIB_SRC = $(RAYLIB_PATH)/src
 
 CXX = g++
 
-CXXFLAGS = -Wall -Wextra -std=c++17 -I$(INC_DIR) -MMD -MP
+CXXFLAGS = -Wall -Wextra -std=c++17 -I$(INC_DIR) -I$(RAYLIB_SRC) -MMD -MP
 #-L adds a repertory (even not existing) to the list of potential container of libraylib.a
 #the following line is dynamic. 1 if raylib is not installed locally, the linker will search for it in classic /usr/... locations. 2 if raylib is locally installed, it will search for it in RAYLIB_SRC.
 LDFLAGS = -L$(RAYLIB_SRC) -lraylib 
