@@ -17,7 +17,7 @@ OBJ_CPP = $(SRC_CPP:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(TARGET)
 
-$(TARGET): raylib $(OBJ_CPP) | bin
+$(TARGET): $(OBJ_CPP) | bin
 	$(CXX) $(OBJ_CPP) -o $(TARGET) $(LDFLAGS)
 
 
@@ -41,5 +41,8 @@ debug: rebuild
 
 -include $(OBJ_CPP:.o=.d)
 
-raylib:
+#it wont install raylib on your system
+install_raylib_locally:
+	git submodule init
+	git submodule update
 	$(MAKE) -C $(RAYLIB_SRC)
