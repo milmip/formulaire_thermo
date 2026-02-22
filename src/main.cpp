@@ -1,13 +1,27 @@
-#include <iostream>
-#include "module1.hpp"
-#include "dir/module2.hpp"
+#include <raylib.h>
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello jupiter !" << endl;
-	modularity_check1();
-	modularity_check2();
+    const int screenWidth = 800;
+    const int screenHeight = 450;
+
+    InitWindow(screenWidth, screenHeight, "Hello window!");
+	
+    SetTargetFPS(60);
+	
+    while (!WindowShouldClose())
+    {
+        BeginDrawing();
+
+        ClearBackground(RAYWHITE);
+
+        DrawText("Hello window!", 190, 200, 20, LIGHTGRAY);
+
+        EndDrawing();
+    }
+
+    CloseWindow();
 	return 0;
 }
